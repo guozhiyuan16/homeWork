@@ -5,6 +5,8 @@
 
 - postman 模拟分段请求 ？
 
+- csrf 攻击
+
 ## http 请求头常用方法总结
 
 ### Accept-Language 实现多语言切换功能
@@ -61,4 +63,7 @@ res.setHeader('Exipres',new Date(Date.now()+10*1000).toLocaleString()); // IE �
 
 ```
 
-### 防盗链
+### 防盗链 Referer
+
+#### 什么是HTTP Referer?
+ 简言之，HTTP Referer是header的一部分，**当浏览器向web服务器发送请求的时候，一般会带上Referer，告诉服务器我是从哪个页面链接过来的**，服务器籍此可以获得一些信息用于处理。比如从我主页上链接到一个朋友那里，他的服务器就能够从HTTP Referer中统计出每天有多少用户点击我主页上的链接访问他的网站。
