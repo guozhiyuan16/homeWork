@@ -1,5 +1,9 @@
 ### 问题
 - Node中除了try catch 还能怎么捕获错误？
+- curl -v --header "Range:bytes=0-5" ？
+> 默认为get请求,如果发送post curl -v -X POST
+
+- postman 模拟分段请求 ？
 
 ## http 请求头常用方法总结
 
@@ -51,4 +55,10 @@ res.setHeader('Exipres',new Date(Date.now()+10*1000).toLocaleString()); // IE �
  每次创建签名都需要把文件读取出来，如果遇到大点的文件会浪费性能 --->根据文件大小 30字节+ 文件的修改时间 = etag    
     
     
-### 206 断点续传 Range    
+### 206 断点续传 Range
+
+```
+
+```
+
+### 防盗链
